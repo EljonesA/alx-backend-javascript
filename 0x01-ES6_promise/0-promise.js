@@ -1,5 +1,7 @@
+// this function returns a promise
 async function getResponseFromAPI() {
-	return new Promise((ressolve, reject) => {
+	return new Promise((resolve, reject) => {
+		// async operation
 	});
 }
 
