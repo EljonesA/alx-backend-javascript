@@ -1,5 +1,3 @@
 export default function setFromArray(array) {
-  const set = new Set(array);
-  
-  return set;
+  return `Set { ${Array.from(new Set(array)).join(', ')} }`;
 }
