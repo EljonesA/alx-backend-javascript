@@ -11,3 +11,14 @@ interface Teacher {
 interface Directors extends Teacher {
   numberOfReports: number;
 }
+
+// printing teachers
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+function printTeacher(firstname: string, lastName: string): string {
+  const firstInitial = firstName.charAt(0);
+
+  return `${firstInitial}. ${lastName}`;
+}
